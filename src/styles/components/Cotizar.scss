@@ -1,0 +1,10 @@
+@import "../Vars.scss";
+
+.Cotizar__container {
+    width: 96vw;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}

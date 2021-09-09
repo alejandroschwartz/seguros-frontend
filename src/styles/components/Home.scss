@@ -1,0 +1,141 @@
+@import "../Vars.scss";
+
+// ----- Hero -----
+.Hero {
+    width: 100vw;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    @media screen and (max-width:900px) {
+        flex-direction: column;
+    }
+}
+.Hero__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Hero__image {
+    object-fit: cover;
+    height: 290px;
+    right: 0;
+
+    @media screen and (max-width:900px) {
+        height: 240px;
+    }
+}
+.Hero__title {
+    text-align: start;
+}
+.Hero__button {
+    margin: auto;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f408e;
+    color: #fff;
+    text-decoration: none;
+}
+// --------------------
+
+// ----- Home -----
+.Home {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-top: 60px;
+        text-align: center;
+        font-weight: 500;
+        color: #4f408e;
+    }
+}
+
+.Home__hero {
+    width: 100vw;
+}
+
+.Home__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Home__product--container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Home__product {
+    border: 1px solid $primary-color; // #585858;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    background-color: $thirth-color;
+
+    i {
+        margin: 12px;
+        margin-top: 36px;
+        font-size: 60px;
+    }
+}
+
+.Home__product--container :hover {
+    background-color: $text-title;
+    color: $thirth-color;
+}
+
+.Home__input {
+    height: 28px;
+    margin-bottom: 8px;
+}
+
+.Item {
+    margin: 16px;
+    width: 280px;
+    border: 2px solid $primary-color;
+    background-color: #fff;
+    // border-radius: 8px;
+    overflow: hidden;
+}
+
+.Item__container {
+    height: 160px;
+
+    img {
+        width: 280px;
+        height: 160px;
+    }
+
+    .Item__image {
+        object-fit: cover;
+    }
+}
+
+.Item__text {
+    margin: 6px;
+    height: 280px;
+}
+
+.Item__title {
+    font-size: 16px;
+}
+
+@media screen and (max-width:769px) {
+
+    .Item__container {
+        height: 245px;
+    
+        img {
+            width: 280px;
+            height: 245px;
+        }
+    }
+}
